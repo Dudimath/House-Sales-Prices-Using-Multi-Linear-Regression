@@ -1,4 +1,4 @@
-# House-Sales-Prices-Using-Multi-Linear-Regression
+# House-Sales-Prices-Analysis-Using-Multi-Linear-Regression
 ![HouseImage](images/Stock-TraditionalNeighborhood-AdobeStock-180147418-copy.jpeg)
 
 # Introduction
@@ -41,6 +41,7 @@ The methodology provides a structured approach to conduct the analysis using mul
 
 ## Regression Model
 House Price = β0 + β1 * bedrooms + β2 * bathrooms + β3 * sqft_living + β4 * sqft_lot + β5 * floors + β6 * grade + β7 * sqft_above + β8 * yr_built + β9 * lat + β10 * long
+
 In this project, we developed a multiple linear regression model to predict house sale prices based on various independent variables. The model was trained using the scikit-learn library and applied to the house sales dataset.
 
 The main independent variables included in the model were: sqft_living, bedrooms, bathrooms, location, amenities, and property grade. Before fitting the model, we performed data cleaning and preprocessing steps to handle missing values, outliers, and feature scaling.
