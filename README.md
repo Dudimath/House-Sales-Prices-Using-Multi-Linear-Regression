@@ -5,7 +5,7 @@
 The goal of this project is to analyze house sales data using multiple regression modelling techniques. By employing multiple regression, we aim to identify and quantify the relationships that exists between various factors or predictors and house sale prices.This analysis will provide insights into the key drivers of house prices and help shareholders make informed decisions related to real estate investment.
 
 # Problem Statement
-This project seek to address the importannce of identifying the factors that significantly affect house prices.Traditional approaches often rely on anectodal evidence or limited analysis, resulting into inaccurate insights. This knowledge gap hampers stakeholders' ability to predict and interpret house proce flactuations effectively. To address this problem, we propose utilizing multiple regression modeling techniques to analyze house sales data comprehensively. By conducting multiple regression, we can identify the relationship between different factors and house sales prices, taking into account the collective impact of multiple independent variables.
+This project seek to address the importannce of identifying the factors that significantly affect house prices.Traditional approaches often rely on anectodal evidence or limited analysis, resulting into inaccurate insights. This knowledge gap hampers stakeholders' ability to predict and interpret house price flactuations effectively. To address this problem, we propose utilizing multiple regression modeling techniques to analyze house sales data comprehensively. By conducting multiple regression, we can identify the relationship between different factors and house sales prices, taking into account the collective impact of multiple independent variables.
 
 # Main Objective
 To analyze house sales data using multiple regression modeling techniques to identify and quantify the key factors influencing house sales prices and help shareholders make data driven decisions on investing in real estate.
@@ -39,7 +39,6 @@ The methodology provides a structured approach to conduct the analysis using mul
 # Results & Interpretation
 ## Regression Model
 
-## Regression Model
 House Price = β0 + β1 * bedrooms + β2 * bathrooms + β3 * sqft_living + β4 * sqft_lot + β5 * floors + β6 * grade + β7 * sqft_above + β8 * yr_built + β9 * lat + β10 * long
 
 In this project, we developed a multiple linear regression model to predict house sale prices based on various independent variables. The model was trained using the scikit-learn library and applied to the house sales dataset.
