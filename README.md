@@ -39,20 +39,31 @@ The methodology provides a structured approach to conduct the analysis using mul
 # Results & Interpretation
 ## Regression Model
 
-House Price = β0 + β1 * bedrooms + β2 * bathrooms + β3 * sqft_living + β4 * sqft_lot + β5 * floors + β6 * grade + β7 * sqft_above + β8 * yr_built + β9 * lat + β10 * long
+House Price = β0 + β1 * bedrooms + β2 *sqft_living  + β3 *sqft_lot  + β4 *floors  + β5 *waterfront  + β6 * view + β7 * sqft_basement + β8 * lat + β9 * years_since_built + β10 *years_since_renovation... 
+
 
 In this project, we developed a multiple linear regression model to predict house sale prices based on various independent variables. The model was trained using the scikit-learn library and applied to the house sales dataset.
 
 The main independent variables included in the model were: sqft_living, bedrooms, bathrooms, location, amenities, and property grade. Before fitting the model, we performed data cleaning and preprocessing steps to handle missing values, outliers, and feature scaling.
 
-The model achieved a train score of 0.769 and a test score of 0.762, indicating a good fit to the data and reasonable predictive performance. The mean absolute error (MAE) on the test set was 0.085, the root mean squared error (RMSE) was 0.110, and the mean squared error (MSE) was 0.012.
-
 The regression coefficients of the independent variables in the model provide insights into their impact on house prices. The coefficient values can be interpreted as follows:
-- Feature 1: -0.004 - This indicates that a one-unit decrease in feature 1 results in a decrease of 0.004 in the predicted house price.
-- Feature 2: 0.023 - A one-unit increase in feature 2 leads to an increase of 0.023 in the predicted house price.
-- Feature 3: 0.027 - A one-unit increase in feature 3 contributes to a 0.027 increase in the predicted house price.
-...
+bedrooms: 0.007053488115005145
+sqft_living: 0.21879685232624443
+sqft_lot: 0.04391340896101223
+floors: 0.003918682710742493
+waterfront: 0.005128900210867402
+view: 0.017348855318549863
+sqft_basement: 0.011713137438066379
+lat: 0.31542450192766364
+years_since_built: 0.0453601222590119
+years_since_renovation: 0.0021116382156942844
+grade: 0.32923041251714236
 
+Mean Squared Error (MSE): MSE measures the average squared difference between the predicted and actual values. A lower MSE value indicates better model performance, as it means the model's predictions are closer to the actual values. In this case, the MSE of 0.007757215745165332 suggests that, on average, the squared difference between the predicted and actual values is relatively small, indicating a good fit of the model to the data.
+
+Root Mean Squared Error (RMSE): RMSE is the square root of the MSE and provides a measure of the average difference between the predicted and actual values in the original units of the target variable. It is a commonly used metric to evaluate the accuracy of regression models. The RMSE value of 0.0880750574519559 indicates that, on average, the predictions deviate by approximately 0.088 from the actual values. A lower RMSE value indicates better model performance.
+
+R-squared Score: The R-squared score, also known as the coefficient of determination, represents the proportion of the variance in the target variable that is predictable from the independent variables in the model. It ranges from 0 to 1, with a higher value indicating a better fit. The R-squared score of 0.8609009268548166 suggests that approximately 86% of the variance in the target variable can be explained by the independent variables included in the model. In other words, the model accounts for a significant portion of the variability in the target variable.
 Overall, the regression analysis identified several significant factors influencing house sale prices, including property size, location, amenities, and property grade. These insights can be used by real estate agents, homeowners, and policymakers to make informed decisions regarding property investments, pricing strategies, and market trends.
 
 
